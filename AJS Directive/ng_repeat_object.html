@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div ng-app="" ng-init="names=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+	
+    <p>Looping with objects:</p>
+    <ul>
+    	<li ng-repeat="i in names">
+        	{{i.name + ',' + i.country}}
+        </li>
+    </ul>
+</div>
+<script src="../angular.min.js"></script>
+
+</body>
+</html>
